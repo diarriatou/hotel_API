@@ -1,4 +1,4 @@
-const Hotel = require('../models/Hotel');
+const Hotel = require('../models/hotel');
 
 // Obtenir tous les hôtels
 const getHotels = async (req, res) => {
