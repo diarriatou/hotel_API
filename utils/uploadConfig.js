@@ -27,7 +27,7 @@ const upload = multer({
 
 module.exports = upload;
 
-// Dans hotelController.js, modifiez aussi le chemin de la photo :
+
 const updateHotelPhoto = async (req, res) => {
   try {
     if (!req.file) {

@@ -3,7 +3,7 @@ const Hotel = require('../models/hotel');
 // Obtenir tous les hôtels
 const getHotels = async (req, res) => {
   try {
-    const hotels = await Hotel.find();
+    const hotels = await Hotel.find({ userId: req.user._id });
     res.status(200).json({
       success: true,
       count: hotels.length,
@@ -17,6 +17,7 @@ const getHotels = async (req, res) => {
     });
   }
 };
+
 
 // Obtenir un hôtel spécifique
 const getHotel = async (req, res) => {

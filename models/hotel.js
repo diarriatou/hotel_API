@@ -35,6 +35,11 @@ const hotelSchema = new mongoose.Schema({
   photo: {
     type: String,
     
+  },
+  userId: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'User',
+    required: true
   }
 }, {
   timestamps: true

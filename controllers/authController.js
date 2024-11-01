@@ -1,8 +1,7 @@
-// controllers/authController.js
+// Logique metiers
 const User = require('../models/user');
 const jwt = require('jsonwebtoken');
 const crypto = require('crypto');
-// const sendEmail = require('../utils/sendEmail');
 // Générer le JWT Token
 const generateToken = (id) => {
   return jwt.sign({ id }, process.env.JWT_SECRET, {
