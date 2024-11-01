@@ -51,7 +51,7 @@ const createHotel = async (req, res) => {
       phone: req.body.phone,
       price: req.body.price,
       currency: req.body.currency,
-      userId: req.user._id, // Ajouter l'userId de l'utilisateur connecté
+    //userId:req.user._id, // Ajouter l'userId de l'utilisateur connecté
       photo: req.file ? `${req.file.filename}` : null // Utilisez le chemin du fichier téléchargé
     };
 
