@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Servir les fichiers statiques
-//app.use('/uploads', express.static('uploads'));
+// app.use('/uploads', express.static('uploads'));
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 // Routes
 app.use('/api/hotels', require('./routes/hotelRoute'));
